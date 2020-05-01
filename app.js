@@ -1,7 +1,7 @@
-var countDownDate = new Date("April 23, 2020 14:50:00").getTime();
+var countDownDate = new Date("May 23, 2020 14:50:00").getTime();
 
 
-var countdown = setInterval(function() {
+countdown = setInterval(function() {
 
 var currentDate = new Date().getTime();
 let timeremain = Math.floor((countDownDate - currentDate)/1000);
@@ -9,7 +9,7 @@ let timeremain = Math.floor((countDownDate - currentDate)/1000);
 var days = Math.floor(timeremain / (60 * 60 * 24));
 var hours = Math.floor((timeremain % ( 60 * 60 * 24)) / (60 * 60));
 var minutes = Math.floor((timeremain % (60 * 60)) / (60));
-var seconds = Math.floor((timeremain % (60)));
+var seconds = Math.floor(timeremain % (60));
 
 
 document.getElementById('dy').innerHTML = days
